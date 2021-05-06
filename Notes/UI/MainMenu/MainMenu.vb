@@ -20,6 +20,6 @@ Public Class MainMenu
     End Sub
 
     Private Sub btnAboutNotes_Click(sender As Object, e As EventArgs) Handles btnAboutNotes.Click
-
+        AboutNotes.ShowDialog()
     End Sub
 End Class

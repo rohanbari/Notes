@@ -9,6 +9,10 @@
     End Sub
 
     Private Sub btnDiscardDraft_Click(sender As Object, e As EventArgs) Handles btnDiscardDraft.Click
+        If String.IsNullOrWhiteSpace(txtHeader.Text) Then
+            GoTo quit
+        End If
+
         Dim ask As DialogResult = MessageBox.Show(
             "All the changes you have made will be permanently lost." + Environment.NewLine +
             Environment.NewLine + "Are you sure you want to discard this draft?",

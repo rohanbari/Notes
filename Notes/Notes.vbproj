@@ -80,6 +80,12 @@
   <ItemGroup>
     <Compile Include="Code\Common.vb" />
     <Compile Include="Code\NoteCluster.vb" />
+    <Compile Include="UI\MainMenu\AboutNotes.Designer.vb">
+      <DependentUpon>AboutNotes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MainMenu\AboutNotes.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UI\MainMenu\MainMenu.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="UI\MainMenu\AboutNotes.resx">
+      <DependentUpon>AboutNotes.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\MainMenu\MainMenu.resx">
       <DependentUpon>MainMenu.vb</DependentUpon>
     </EmbeddedResource>
