@@ -102,6 +102,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="UI\NewNote.Designer.vb">
+      <DependentUpon>NewNote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\NewNote.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="UI\MainMenu.resx">
@@ -112,6 +118,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\NewNote.resx">
+      <DependentUpon>NewNote.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

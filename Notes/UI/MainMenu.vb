@@ -3,8 +3,12 @@ Option Explicit On
 
 Public Class MainMenu
 
+    Private Sub MainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
     Private Sub btnNewNote_Click(sender As Object, e As EventArgs) Handles btnNewNote.Click
-        Common.ShowMessage("Welcome to the Notes app!", "Welcome User", 1)
+        NewNote.ShowDialog()
     End Sub
 
     Private Sub btnManageNotes_Click(sender As Object, e As EventArgs) Handles btnManageNotes.Click
