@@ -79,6 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Code\Common.vb" />
+    <Compile Include="Code\NoteCluster.vb" />
     <Compile Include="UI\MainMenu.vb">
       <SubType>Form</SubType>
     </Compile>

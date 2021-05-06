@@ -29,6 +29,7 @@ Partial Class NewNote
         Me.txtBody = New System.Windows.Forms.TextBox()
         Me.labelCaption = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtStatistics = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnSaveToNotes
@@ -80,10 +81,10 @@ Partial Class NewNote
         Me.txtHeader.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtHeader.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.txtHeader.ForeColor = System.Drawing.Color.CornflowerBlue
-        Me.txtHeader.Location = New System.Drawing.Point(50, 14)
+        Me.txtHeader.Location = New System.Drawing.Point(57, 12)
         Me.txtHeader.MaxLength = 256
         Me.txtHeader.Name = "txtHeader"
-        Me.txtHeader.Size = New System.Drawing.Size(422, 16)
+        Me.txtHeader.Size = New System.Drawing.Size(418, 16)
         Me.txtHeader.TabIndex = 4
         '
         'txtBody
@@ -93,10 +94,10 @@ Partial Class NewNote
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBody.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtBody.Enabled = False
-        Me.txtBody.Location = New System.Drawing.Point(12, 43)
+        Me.txtBody.Location = New System.Drawing.Point(15, 36)
         Me.txtBody.Multiline = True
         Me.txtBody.Name = "txtBody"
-        Me.txtBody.Size = New System.Drawing.Size(460, 275)
+        Me.txtBody.Size = New System.Drawing.Size(460, 250)
         Me.txtBody.TabIndex = 5
         '
         'labelCaption
@@ -106,7 +107,7 @@ Partial Class NewNote
         Me.labelCaption.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.labelCaption.Font = New System.Drawing.Font("Segoe UI", 16.0!)
         Me.labelCaption.ForeColor = System.Drawing.Color.DimGray
-        Me.labelCaption.Location = New System.Drawing.Point(145, 165)
+        Me.labelCaption.Location = New System.Drawing.Point(148, 146)
         Me.labelCaption.Name = "labelCaption"
         Me.labelCaption.Size = New System.Drawing.Size(194, 30)
         Me.labelCaption.TabIndex = 6
@@ -117,11 +118,24 @@ Partial Class NewNote
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Label1.Location = New System.Drawing.Point(12, 14)
+        Me.Label1.Location = New System.Drawing.Point(14, 12)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(32, 15)
+        Me.Label1.Size = New System.Drawing.Size(37, 15)
         Me.Label1.TabIndex = 7
-        Me.Label1.Text = "Title"
+        Me.Label1.Text = "TITLE"
+        '
+        'txtStatistics
+        '
+        Me.txtStatistics.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtStatistics.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.txtStatistics.ForeColor = System.Drawing.Color.DarkGray
+        Me.txtStatistics.Location = New System.Drawing.Point(220, 289)
+        Me.txtStatistics.Name = "txtStatistics"
+        Me.txtStatistics.Size = New System.Drawing.Size(256, 32)
+        Me.txtStatistics.TabIndex = 8
+        Me.txtStatistics.Text = "Statistics"
+        Me.txtStatistics.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.txtStatistics.Visible = False
         '
         'NewNote
         '
@@ -130,6 +144,7 @@ Partial Class NewNote
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.ClientSize = New System.Drawing.Size(484, 361)
         Me.ControlBox = False
+        Me.Controls.Add(Me.txtStatistics)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.labelCaption)
         Me.Controls.Add(Me.txtBody)
@@ -160,4 +175,5 @@ Partial Class NewNote
     Friend WithEvents txtBody As TextBox
     Friend WithEvents labelCaption As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents txtStatistics As Label
 End Class
