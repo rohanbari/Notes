@@ -1,19 +1,19 @@
 ﻿Public Class NewNote
+
+    Private Sub NewNote_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
     Private Sub btnSaveToNotes_Click(sender As Object, e As EventArgs) Handles btnSaveToNotes.Click
 
     End Sub
 
     Private Sub btnDiscardDraft_Click(sender As Object, e As EventArgs) Handles btnDiscardDraft.Click
-        If txtBody.Text.Length = 0 And txtHeader.Text.Length = 0 Then
-            GoTo quit
-        End If
-
         Dim ask As DialogResult = MessageBox.Show(
-            "All the made changes will be lost forever." + Environment.NewLine + Environment.NewLine +
-            "Are you sure you want to discard this draft?",
+            "All the changes you have made will be permanently lost." + Environment.NewLine +
+            Environment.NewLine + "Are you sure you want to discard this draft?",
             "Discard Confirmation",
-            MessageBoxButtons.YesNo,
-            MessageBoxIcon.Question)
+            MessageBoxButtons.YesNo, MessageBoxIcon.Question)
 
         If ask = DialogResult.No Then
             Return
@@ -25,12 +25,15 @@ quit:
     End Sub
 
     Private Sub btnPreferences_Click(sender As Object, e As EventArgs) Handles btnPreferences.Click
-
+        Preferences.ShowDialog()
     End Sub
 
     Private Sub txtHeader_TextChanged(sender As Object, e As EventArgs) Handles txtHeader.TextChanged
         txtBody.Enabled = Not String.IsNullOrWhiteSpace(txtHeader.Text)
+        txtHeaderCaption.Visible = Not txtBody.Enabled
         labelCaption.Visible = txtBody.Text.Length = 0 And txtHeader.Text.Length > 0
+
+        Text = If(txtHeader.Text.Length <> 0, "New Note — " + txtHeader.Text, "New Note")
     End Sub
 
     Private Sub txtBody_TextChanged(sender As Object, e As EventArgs) Handles txtBody.TextChanged
@@ -38,6 +41,8 @@ quit:
 
         labelCaption.Visible = txtLength = 0
         txtStatistics.Visible = txtLength > 0
+
+        btnSaveToNotes.Enabled = txtLength > 0
 
         Dim cleanString As String = System.Text.RegularExpressions.Regex.Replace(txtBody.Text, "\s+", " ")
         txtBody.Text = cleanString
