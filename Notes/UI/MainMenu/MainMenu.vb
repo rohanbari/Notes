@@ -7,19 +7,19 @@ Public Class MainMenu
 
     End Sub
 
-    Private Sub btnNewNote_Click(sender As Object, e As EventArgs) Handles btnNewNote.Click
+    Private Sub BtnNewNote_Click(sender As Object, e As EventArgs) Handles BtnNewNote.Click
         NewNote.ShowDialog()
     End Sub
 
-    Private Sub btnManageNotes_Click(sender As Object, e As EventArgs) Handles btnManageNotes.Click
+    Private Sub BtnManageNotes_Click(sender As Object, e As EventArgs) Handles BtnManageNotes.Click
 
     End Sub
 
-    Private Sub btnStatistics_Click(sender As Object, e As EventArgs) Handles btnStatistics.Click
+    Private Sub BtnStatistics_Click(sender As Object, e As EventArgs) Handles BtnStatistics.Click
 
     End Sub
 
-    Private Sub btnAboutNotes_Click(sender As Object, e As EventArgs) Handles btnAboutNotes.Click
+    Private Sub BtnAboutNotes_Click(sender As Object, e As EventArgs) Handles BtnAboutNotes.Click
         AboutNotes.ShowDialog()
     End Sub
 End Class

@@ -7,12 +7,12 @@ Public Class NewNote
 
     End Sub
 
-    Private Sub btnSaveToNotes_Click(sender As Object, e As EventArgs) Handles btnSaveToNotes.Click
+    Private Sub BtnSaveToNotes_Click(sender As Object, e As EventArgs) Handles BtnSaveToNotes.Click
 
     End Sub
 
-    Private Sub btnDiscardDraft_Click(sender As Object, e As EventArgs) Handles btnDiscardDraft.Click
-        If String.IsNullOrWhiteSpace(txtHeader.Text) Then
+    Private Sub BtnDiscardDraft_Click(sender As Object, e As EventArgs) Handles BtnDiscardDraft.Click
+        If String.IsNullOrWhiteSpace(TextHeader.Text) Then
             GoTo quit
         End If
 
@@ -31,37 +31,37 @@ quit:
         Close()
     End Sub
 
-    Private Sub btnPreferences_Click(sender As Object, e As EventArgs) Handles btnPreferences.Click
+    Private Sub BtnPreferences_Click(sender As Object, e As EventArgs) Handles BtnPreferences.Click
         Preferences.ShowDialog()
     End Sub
 
-    Private Sub txtHeader_TextChanged(sender As Object, e As EventArgs) Handles txtHeader.TextChanged
-        txtBody.Enabled = Not String.IsNullOrWhiteSpace(txtHeader.Text)
-        txtHeaderCaption.Visible = Not txtBody.Enabled
-        labelCaption.Visible = txtBody.Text.Length = 0 And txtHeader.Text.Length > 0
+    Private Sub TextHeader_TextChanged(sender As Object, e As EventArgs) Handles TextHeader.TextChanged
+        TextBody.Enabled = Not String.IsNullOrWhiteSpace(TextHeader.Text)
+        LabelHeaderCaption.Visible = Not TextBody.Enabled
+        LabelCaption.Visible = TextBody.Text.Length = 0 And TextHeader.Text.Length > 0
 
-        Text = If(txtHeader.Text.Length <> 0, "New Note — " + txtHeader.Text, "New Note")
+        Text = If(TextHeader.Text.Length <> 0, "New Note — " + TextHeader.Text, "New Note")
     End Sub
 
-    Private Sub txtBody_TextChanged(sender As Object, e As EventArgs) Handles txtBody.TextChanged
-        Dim txtLength As Integer = txtBody.Text.Length
+    Private Sub TextBody_TextChanged(sender As Object, e As EventArgs) Handles TextBody.TextChanged
+        Dim txtLength As Integer = TextBody.Text.Length
 
-        labelCaption.Visible = txtLength = 0
-        txtStatistics.Visible = txtLength > 0
+        LabelCaption.Visible = txtLength = 0
+        LabelStatistics.Visible = txtLength > 0
 
-        btnSaveToNotes.Enabled = txtLength > 0
+        BtnSaveToNotes.Enabled = txtLength > 0
 
-        Dim cleanString As String = System.Text.RegularExpressions.Regex.Replace(txtBody.Text, "\s+", " ")
-        txtBody.Text = cleanString
+        Dim cleanString As String = System.Text.RegularExpressions.Regex.Replace(TextBody.Text, "\s+", " ")
+        TextBody.Text = cleanString
 
-        Dim words As Integer = NoteCluster.WordCount(txtBody.Text)
+        Dim words As Integer = NoteCluster.WordCount(TextBody.Text)
 
-        txtBody.SelectionStart = txtLength
-        txtBody.SelectionLength = 0
+        TextBody.SelectionStart = txtLength
+        TextBody.SelectionLength = 0
 
         Dim expr = words.ToString + " word" + If(words <> 1, "s", "") + " (" + txtLength.ToString +
             " character" + If(txtLength <> 1, "s", "") + ")"
 
-        txtStatistics.Text = expr
+        LabelStatistics.Text = expr
     End Sub
 End Class

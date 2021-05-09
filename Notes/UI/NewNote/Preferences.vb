@@ -7,11 +7,11 @@ Public Class Preferences
 
     End Sub
 
-    Private Sub btnApplyChanges_Click(sender As Object, e As EventArgs) Handles btnApplyChanges.Click
+    Private Sub BtnApplyChanges_Click(sender As Object, e As EventArgs) Handles BtnApplyChanges.Click
 
     End Sub
 
-    Private Sub btnDiscard_Click(sender As Object, e As EventArgs) Handles btnDiscard.Click
+    Private Sub BtnDiscard_Click(sender As Object, e As EventArgs) Handles BtnDiscard.Click
         Dispose()
         Close()
     End Sub

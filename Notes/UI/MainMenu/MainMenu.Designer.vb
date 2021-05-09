@@ -23,77 +23,77 @@ Partial Class MainMenu
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainMenu))
-        Me.btnNewNote = New System.Windows.Forms.Button()
-        Me.btnManageNotes = New System.Windows.Forms.Button()
-        Me.btnStatistics = New System.Windows.Forms.Button()
-        Me.btnAboutNotes = New System.Windows.Forms.Button()
-        Me.labelHeader = New System.Windows.Forms.Label()
+        Me.BtnNewNote = New System.Windows.Forms.Button()
+        Me.BtnManageNotes = New System.Windows.Forms.Button()
+        Me.BtnStatistics = New System.Windows.Forms.Button()
+        Me.BtnAboutNotes = New System.Windows.Forms.Button()
+        Me.LabelHeader = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'btnNewNote
+        'BtnNewNote
         '
-        Me.btnNewNote.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnNewNote.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.btnNewNote.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue
-        Me.btnNewNote.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnNewNote.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.btnNewNote.ForeColor = System.Drawing.Color.White
-        Me.btnNewNote.Location = New System.Drawing.Point(92, 112)
-        Me.btnNewNote.Name = "btnNewNote"
-        Me.btnNewNote.Size = New System.Drawing.Size(200, 25)
-        Me.btnNewNote.TabIndex = 0
-        Me.btnNewNote.Text = "New Note"
-        Me.btnNewNote.UseVisualStyleBackColor = False
+        Me.BtnNewNote.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.BtnNewNote.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.BtnNewNote.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue
+        Me.BtnNewNote.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnNewNote.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.BtnNewNote.ForeColor = System.Drawing.Color.White
+        Me.BtnNewNote.Location = New System.Drawing.Point(92, 112)
+        Me.BtnNewNote.Name = "BtnNewNote"
+        Me.BtnNewNote.Size = New System.Drawing.Size(200, 25)
+        Me.BtnNewNote.TabIndex = 0
+        Me.BtnNewNote.Text = "New Note"
+        Me.BtnNewNote.UseVisualStyleBackColor = False
         '
-        'btnManageNotes
+        'BtnManageNotes
         '
-        Me.btnManageNotes.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnManageNotes.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.btnManageNotes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnManageNotes.ForeColor = System.Drawing.Color.DimGray
-        Me.btnManageNotes.Location = New System.Drawing.Point(92, 143)
-        Me.btnManageNotes.Name = "btnManageNotes"
-        Me.btnManageNotes.Size = New System.Drawing.Size(200, 25)
-        Me.btnManageNotes.TabIndex = 1
-        Me.btnManageNotes.Text = "Manage Notes"
-        Me.btnManageNotes.UseVisualStyleBackColor = True
+        Me.BtnManageNotes.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.BtnManageNotes.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BtnManageNotes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnManageNotes.ForeColor = System.Drawing.Color.DimGray
+        Me.BtnManageNotes.Location = New System.Drawing.Point(92, 143)
+        Me.BtnManageNotes.Name = "BtnManageNotes"
+        Me.BtnManageNotes.Size = New System.Drawing.Size(200, 25)
+        Me.BtnManageNotes.TabIndex = 1
+        Me.BtnManageNotes.Text = "Manage Notes"
+        Me.BtnManageNotes.UseVisualStyleBackColor = True
         '
-        'btnStatistics
+        'BtnStatistics
         '
-        Me.btnStatistics.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnStatistics.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.btnStatistics.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnStatistics.ForeColor = System.Drawing.Color.DimGray
-        Me.btnStatistics.Location = New System.Drawing.Point(92, 174)
-        Me.btnStatistics.Name = "btnStatistics"
-        Me.btnStatistics.Size = New System.Drawing.Size(200, 25)
-        Me.btnStatistics.TabIndex = 2
-        Me.btnStatistics.Text = "Statistics"
-        Me.btnStatistics.UseVisualStyleBackColor = True
+        Me.BtnStatistics.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.BtnStatistics.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BtnStatistics.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnStatistics.ForeColor = System.Drawing.Color.DimGray
+        Me.BtnStatistics.Location = New System.Drawing.Point(92, 174)
+        Me.BtnStatistics.Name = "BtnStatistics"
+        Me.BtnStatistics.Size = New System.Drawing.Size(200, 25)
+        Me.BtnStatistics.TabIndex = 2
+        Me.BtnStatistics.Text = "Statistics"
+        Me.BtnStatistics.UseVisualStyleBackColor = True
         '
-        'btnAboutNotes
+        'BtnAboutNotes
         '
-        Me.btnAboutNotes.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.btnAboutNotes.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.btnAboutNotes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAboutNotes.ForeColor = System.Drawing.Color.CornflowerBlue
-        Me.btnAboutNotes.Location = New System.Drawing.Point(90, 274)
-        Me.btnAboutNotes.Name = "btnAboutNotes"
-        Me.btnAboutNotes.Size = New System.Drawing.Size(200, 25)
-        Me.btnAboutNotes.TabIndex = 3
-        Me.btnAboutNotes.Text = "About Notes"
-        Me.btnAboutNotes.UseVisualStyleBackColor = True
+        Me.BtnAboutNotes.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.BtnAboutNotes.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BtnAboutNotes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnAboutNotes.ForeColor = System.Drawing.Color.CornflowerBlue
+        Me.BtnAboutNotes.Location = New System.Drawing.Point(90, 274)
+        Me.BtnAboutNotes.Name = "BtnAboutNotes"
+        Me.BtnAboutNotes.Size = New System.Drawing.Size(200, 25)
+        Me.BtnAboutNotes.TabIndex = 3
+        Me.BtnAboutNotes.Text = "About Notes"
+        Me.BtnAboutNotes.UseVisualStyleBackColor = True
         '
-        'labelHeader
+        'LabelHeader
         '
-        Me.labelHeader.AutoSize = True
-        Me.labelHeader.Font = New System.Drawing.Font("Segoe UI", 16.0!)
-        Me.labelHeader.ForeColor = System.Drawing.Color.DimGray
-        Me.labelHeader.Location = New System.Drawing.Point(12, 9)
-        Me.labelHeader.Name = "labelHeader"
-        Me.labelHeader.Size = New System.Drawing.Size(199, 30)
-        Me.labelHeader.TabIndex = 4
-        Me.labelHeader.Text = "Welcome to Notes!"
+        Me.LabelHeader.AutoSize = True
+        Me.LabelHeader.Font = New System.Drawing.Font("Segoe UI", 16.0!)
+        Me.LabelHeader.ForeColor = System.Drawing.Color.DimGray
+        Me.LabelHeader.Location = New System.Drawing.Point(12, 9)
+        Me.LabelHeader.Name = "LabelHeader"
+        Me.LabelHeader.Size = New System.Drawing.Size(199, 30)
+        Me.LabelHeader.TabIndex = 4
+        Me.LabelHeader.Text = "Welcome to Notes!"
         '
         'MainMenu
         '
@@ -101,11 +101,11 @@ Partial Class MainMenu
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.ClientSize = New System.Drawing.Size(384, 311)
-        Me.Controls.Add(Me.labelHeader)
-        Me.Controls.Add(Me.btnAboutNotes)
-        Me.Controls.Add(Me.btnStatistics)
-        Me.Controls.Add(Me.btnManageNotes)
-        Me.Controls.Add(Me.btnNewNote)
+        Me.Controls.Add(Me.LabelHeader)
+        Me.Controls.Add(Me.BtnAboutNotes)
+        Me.Controls.Add(Me.BtnStatistics)
+        Me.Controls.Add(Me.BtnManageNotes)
+        Me.Controls.Add(Me.BtnNewNote)
         Me.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.ForeColor = System.Drawing.Color.DimGray
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -119,9 +119,9 @@ Partial Class MainMenu
 
     End Sub
 
-    Friend WithEvents btnNewNote As Button
-    Friend WithEvents btnManageNotes As Button
-    Friend WithEvents btnStatistics As Button
-    Friend WithEvents btnAboutNotes As Button
-    Friend WithEvents labelHeader As Label
+    Friend WithEvents BtnNewNote As Button
+    Friend WithEvents BtnManageNotes As Button
+    Friend WithEvents BtnStatistics As Button
+    Friend WithEvents BtnAboutNotes As Button
+    Friend WithEvents LabelHeader As Label
 End Class

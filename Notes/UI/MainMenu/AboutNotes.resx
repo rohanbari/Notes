@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="picLogo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="PicLogo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         xAAADsQBlSsOGwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAACn+SURBVHhe7d1/
@@ -304,7 +304,7 @@
         AxX+FiGk9ea3AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="labelAbout.Text" xml:space="preserve">
+  <data name="LabelAbout.Text" xml:space="preserve">
     <value>This is an elegant, fast, lightweight, and general-purpose application based on .NET Framework 4.5 that helps the user to write down handy notes, so they may read or keep them for their later use.
 
 Notes has several notable features. For example, taking the notes with care that includes individually assigned look and feel preferences, managing them, viewing the lifetime statistics, etc.</value>

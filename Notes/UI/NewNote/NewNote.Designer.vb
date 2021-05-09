@@ -22,125 +22,125 @@ Partial Class NewNote
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.btnSaveToNotes = New System.Windows.Forms.Button()
-        Me.btnDiscardDraft = New System.Windows.Forms.Button()
-        Me.btnPreferences = New System.Windows.Forms.Button()
-        Me.txtBody = New System.Windows.Forms.TextBox()
-        Me.labelCaption = New System.Windows.Forms.Label()
-        Me.txtStatistics = New System.Windows.Forms.Label()
-        Me.txtHeader = New System.Windows.Forms.TextBox()
-        Me.txtHeaderCaption = New System.Windows.Forms.Label()
+        Me.BtnSaveToNotes = New System.Windows.Forms.Button()
+        Me.BtnDiscardDraft = New System.Windows.Forms.Button()
+        Me.BtnPreferences = New System.Windows.Forms.Button()
+        Me.TextBody = New System.Windows.Forms.TextBox()
+        Me.LabelCaption = New System.Windows.Forms.Label()
+        Me.LabelStatistics = New System.Windows.Forms.Label()
+        Me.TextHeader = New System.Windows.Forms.TextBox()
+        Me.LabelHeaderCaption = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'btnSaveToNotes
+        'BtnSaveToNotes
         '
-        Me.btnSaveToNotes.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnSaveToNotes.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.btnSaveToNotes.Enabled = False
-        Me.btnSaveToNotes.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue
-        Me.btnSaveToNotes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSaveToNotes.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.btnSaveToNotes.ForeColor = System.Drawing.Color.White
-        Me.btnSaveToNotes.Location = New System.Drawing.Point(347, 324)
-        Me.btnSaveToNotes.Name = "btnSaveToNotes"
-        Me.btnSaveToNotes.Size = New System.Drawing.Size(125, 25)
-        Me.btnSaveToNotes.TabIndex = 2
-        Me.btnSaveToNotes.Text = "Save to Notes"
-        Me.btnSaveToNotes.UseVisualStyleBackColor = False
+        Me.BtnSaveToNotes.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnSaveToNotes.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.BtnSaveToNotes.Enabled = False
+        Me.BtnSaveToNotes.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue
+        Me.BtnSaveToNotes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnSaveToNotes.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.BtnSaveToNotes.ForeColor = System.Drawing.Color.White
+        Me.BtnSaveToNotes.Location = New System.Drawing.Point(347, 324)
+        Me.BtnSaveToNotes.Name = "BtnSaveToNotes"
+        Me.BtnSaveToNotes.Size = New System.Drawing.Size(125, 25)
+        Me.BtnSaveToNotes.TabIndex = 2
+        Me.BtnSaveToNotes.Text = "Save to Notes"
+        Me.BtnSaveToNotes.UseVisualStyleBackColor = False
         '
-        'btnDiscardDraft
+        'BtnDiscardDraft
         '
-        Me.btnDiscardDraft.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnDiscardDraft.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(186, Byte), Integer))
-        Me.btnDiscardDraft.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(186, Byte), Integer))
-        Me.btnDiscardDraft.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDiscardDraft.ForeColor = System.Drawing.Color.DarkRed
-        Me.btnDiscardDraft.Location = New System.Drawing.Point(216, 324)
-        Me.btnDiscardDraft.Name = "btnDiscardDraft"
-        Me.btnDiscardDraft.Size = New System.Drawing.Size(125, 25)
-        Me.btnDiscardDraft.TabIndex = 3
-        Me.btnDiscardDraft.Text = "Discard Draft"
-        Me.btnDiscardDraft.UseVisualStyleBackColor = False
+        Me.BtnDiscardDraft.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnDiscardDraft.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(186, Byte), Integer))
+        Me.BtnDiscardDraft.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(186, Byte), Integer))
+        Me.BtnDiscardDraft.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnDiscardDraft.ForeColor = System.Drawing.Color.DarkRed
+        Me.BtnDiscardDraft.Location = New System.Drawing.Point(216, 324)
+        Me.BtnDiscardDraft.Name = "BtnDiscardDraft"
+        Me.BtnDiscardDraft.Size = New System.Drawing.Size(125, 25)
+        Me.BtnDiscardDraft.TabIndex = 3
+        Me.BtnDiscardDraft.Text = "Discard Draft"
+        Me.BtnDiscardDraft.UseVisualStyleBackColor = False
         '
-        'btnPreferences
+        'BtnPreferences
         '
-        Me.btnPreferences.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.btnPreferences.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.btnPreferences.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnPreferences.ForeColor = System.Drawing.Color.DimGray
-        Me.btnPreferences.Location = New System.Drawing.Point(12, 324)
-        Me.btnPreferences.Name = "btnPreferences"
-        Me.btnPreferences.Size = New System.Drawing.Size(125, 25)
-        Me.btnPreferences.TabIndex = 4
-        Me.btnPreferences.Text = "Preferences"
-        Me.btnPreferences.UseVisualStyleBackColor = True
+        Me.BtnPreferences.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.BtnPreferences.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BtnPreferences.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnPreferences.ForeColor = System.Drawing.Color.DimGray
+        Me.BtnPreferences.Location = New System.Drawing.Point(12, 324)
+        Me.BtnPreferences.Name = "BtnPreferences"
+        Me.BtnPreferences.Size = New System.Drawing.Size(125, 25)
+        Me.BtnPreferences.TabIndex = 4
+        Me.BtnPreferences.Text = "Preferences"
+        Me.BtnPreferences.UseVisualStyleBackColor = True
         '
-        'txtBody
+        'TextBody
         '
-        Me.txtBody.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.TextBody.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtBody.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtBody.Enabled = False
-        Me.txtBody.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.txtBody.ForeColor = System.Drawing.Color.DimGray
-        Me.txtBody.Location = New System.Drawing.Point(12, 61)
-        Me.txtBody.Multiline = True
-        Me.txtBody.Name = "txtBody"
-        Me.txtBody.Size = New System.Drawing.Size(460, 225)
-        Me.txtBody.TabIndex = 1
+        Me.TextBody.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBody.Enabled = False
+        Me.TextBody.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.TextBody.ForeColor = System.Drawing.Color.DimGray
+        Me.TextBody.Location = New System.Drawing.Point(12, 61)
+        Me.TextBody.Multiline = True
+        Me.TextBody.Name = "TextBody"
+        Me.TextBody.Size = New System.Drawing.Size(460, 225)
+        Me.TextBody.TabIndex = 1
         '
-        'labelCaption
+        'LabelCaption
         '
-        Me.labelCaption.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.labelCaption.AutoSize = True
-        Me.labelCaption.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.labelCaption.Font = New System.Drawing.Font("Segoe UI", 16.0!)
-        Me.labelCaption.ForeColor = System.Drawing.Color.DimGray
-        Me.labelCaption.Location = New System.Drawing.Point(146, 158)
-        Me.labelCaption.Name = "labelCaption"
-        Me.labelCaption.Size = New System.Drawing.Size(194, 30)
-        Me.labelCaption.TabIndex = 6
-        Me.labelCaption.Text = "Start writing here..."
-        Me.labelCaption.Visible = False
+        Me.LabelCaption.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.LabelCaption.AutoSize = True
+        Me.LabelCaption.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.LabelCaption.Font = New System.Drawing.Font("Segoe UI", 16.0!)
+        Me.LabelCaption.ForeColor = System.Drawing.Color.DimGray
+        Me.LabelCaption.Location = New System.Drawing.Point(146, 158)
+        Me.LabelCaption.Name = "LabelCaption"
+        Me.LabelCaption.Size = New System.Drawing.Size(194, 30)
+        Me.LabelCaption.TabIndex = 6
+        Me.LabelCaption.Text = "Start writing here..."
+        Me.LabelCaption.Visible = False
         '
-        'txtStatistics
+        'LabelStatistics
         '
-        Me.txtStatistics.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtStatistics.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.txtStatistics.ForeColor = System.Drawing.Color.DarkGray
-        Me.txtStatistics.Location = New System.Drawing.Point(220, 289)
-        Me.txtStatistics.Name = "txtStatistics"
-        Me.txtStatistics.Size = New System.Drawing.Size(256, 32)
-        Me.txtStatistics.TabIndex = 5
-        Me.txtStatistics.Text = "Statistics"
-        Me.txtStatistics.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.txtStatistics.Visible = False
+        Me.LabelStatistics.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.LabelStatistics.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.LabelStatistics.ForeColor = System.Drawing.Color.DarkGray
+        Me.LabelStatistics.Location = New System.Drawing.Point(220, 289)
+        Me.LabelStatistics.Name = "LabelStatistics"
+        Me.LabelStatistics.Size = New System.Drawing.Size(256, 32)
+        Me.LabelStatistics.TabIndex = 5
+        Me.LabelStatistics.Text = "Statistics"
+        Me.LabelStatistics.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.LabelStatistics.Visible = False
         '
-        'txtHeader
+        'TextHeader
         '
-        Me.txtHeader.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.TextHeader.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtHeader.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtHeader.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.txtHeader.ForeColor = System.Drawing.Color.CornflowerBlue
-        Me.txtHeader.Location = New System.Drawing.Point(14, 21)
-        Me.txtHeader.Name = "txtHeader"
-        Me.txtHeader.Size = New System.Drawing.Size(458, 20)
-        Me.txtHeader.TabIndex = 0
+        Me.TextHeader.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextHeader.Font = New System.Drawing.Font("Segoe UI", 11.0!)
+        Me.TextHeader.ForeColor = System.Drawing.Color.CornflowerBlue
+        Me.TextHeader.Location = New System.Drawing.Point(14, 21)
+        Me.TextHeader.Name = "TextHeader"
+        Me.TextHeader.Size = New System.Drawing.Size(458, 20)
+        Me.TextHeader.TabIndex = 0
         '
-        'txtHeaderCaption
+        'LabelHeaderCaption
         '
-        Me.txtHeaderCaption.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.txtHeaderCaption.AutoSize = True
-        Me.txtHeaderCaption.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtHeaderCaption.Font = New System.Drawing.Font("Segoe UI", 14.0!)
-        Me.txtHeaderCaption.ForeColor = System.Drawing.Color.CornflowerBlue
-        Me.txtHeaderCaption.Location = New System.Drawing.Point(121, 17)
-        Me.txtHeaderCaption.Name = "txtHeaderCaption"
-        Me.txtHeaderCaption.Size = New System.Drawing.Size(242, 25)
-        Me.txtHeaderCaption.TabIndex = 10
-        Me.txtHeaderCaption.Text = "Provide a suitable title here"
+        Me.LabelHeaderCaption.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.LabelHeaderCaption.AutoSize = True
+        Me.LabelHeaderCaption.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.LabelHeaderCaption.Font = New System.Drawing.Font("Segoe UI", 14.0!)
+        Me.LabelHeaderCaption.ForeColor = System.Drawing.Color.CornflowerBlue
+        Me.LabelHeaderCaption.Location = New System.Drawing.Point(121, 17)
+        Me.LabelHeaderCaption.Name = "LabelHeaderCaption"
+        Me.LabelHeaderCaption.Size = New System.Drawing.Size(242, 25)
+        Me.LabelHeaderCaption.TabIndex = 10
+        Me.LabelHeaderCaption.Text = "Provide a suitable title here"
         '
         'NewNote
         '
@@ -149,14 +149,14 @@ Partial Class NewNote
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.ClientSize = New System.Drawing.Size(484, 361)
         Me.ControlBox = False
-        Me.Controls.Add(Me.txtHeaderCaption)
-        Me.Controls.Add(Me.txtHeader)
-        Me.Controls.Add(Me.txtStatistics)
-        Me.Controls.Add(Me.labelCaption)
-        Me.Controls.Add(Me.txtBody)
-        Me.Controls.Add(Me.btnPreferences)
-        Me.Controls.Add(Me.btnDiscardDraft)
-        Me.Controls.Add(Me.btnSaveToNotes)
+        Me.Controls.Add(Me.LabelHeaderCaption)
+        Me.Controls.Add(Me.TextHeader)
+        Me.Controls.Add(Me.LabelStatistics)
+        Me.Controls.Add(Me.LabelCaption)
+        Me.Controls.Add(Me.TextBody)
+        Me.Controls.Add(Me.BtnPreferences)
+        Me.Controls.Add(Me.BtnDiscardDraft)
+        Me.Controls.Add(Me.BtnSaveToNotes)
         Me.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.ForeColor = System.Drawing.Color.DimGray
         Me.MaximizeBox = False
@@ -173,12 +173,12 @@ Partial Class NewNote
 
     End Sub
 
-    Friend WithEvents btnSaveToNotes As Button
-    Friend WithEvents btnDiscardDraft As Button
-    Friend WithEvents btnPreferences As Button
-    Friend WithEvents txtBody As TextBox
-    Friend WithEvents labelCaption As Label
-    Friend WithEvents txtStatistics As Label
-    Friend WithEvents txtHeader As TextBox
-    Friend WithEvents txtHeaderCaption As Label
+    Friend WithEvents BtnSaveToNotes As Button
+    Friend WithEvents BtnDiscardDraft As Button
+    Friend WithEvents BtnPreferences As Button
+    Friend WithEvents TextBody As TextBox
+    Friend WithEvents LabelCaption As Label
+    Friend WithEvents LabelStatistics As Label
+    Friend WithEvents TextHeader As TextBox
+    Friend WithEvents LabelHeaderCaption As Label
 End Class

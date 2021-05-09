@@ -22,121 +22,121 @@ Partial Class Preferences
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.btnApplyChanges = New System.Windows.Forms.Button()
-        Me.btnDiscard = New System.Windows.Forms.Button()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.btnSelectFont = New System.Windows.Forms.Button()
-        Me.chkStrikethrough = New System.Windows.Forms.CheckBox()
-        Me.chkItalic = New System.Windows.Forms.CheckBox()
-        Me.chkBold = New System.Windows.Forms.CheckBox()
-        Me.labelHead = New System.Windows.Forms.Label()
-        Me.GroupBox1.SuspendLayout()
+        Me.BtnApplyChanges = New System.Windows.Forms.Button()
+        Me.BtnDiscard = New System.Windows.Forms.Button()
+        Me.GroupMain = New System.Windows.Forms.GroupBox()
+        Me.BtnSelectFont = New System.Windows.Forms.Button()
+        Me.ChkStrikethrough = New System.Windows.Forms.CheckBox()
+        Me.ChkItalic = New System.Windows.Forms.CheckBox()
+        Me.ChkBold = New System.Windows.Forms.CheckBox()
+        Me.LabelHead = New System.Windows.Forms.Label()
+        Me.GroupMain.SuspendLayout()
         Me.SuspendLayout()
         '
-        'btnApplyChanges
+        'BtnApplyChanges
         '
-        Me.btnApplyChanges.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnApplyChanges.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.btnApplyChanges.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue
-        Me.btnApplyChanges.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnApplyChanges.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.btnApplyChanges.ForeColor = System.Drawing.Color.White
-        Me.btnApplyChanges.Location = New System.Drawing.Point(197, 174)
-        Me.btnApplyChanges.Name = "btnApplyChanges"
-        Me.btnApplyChanges.Size = New System.Drawing.Size(100, 25)
-        Me.btnApplyChanges.TabIndex = 3
-        Me.btnApplyChanges.Text = "Apply Changes"
-        Me.btnApplyChanges.UseVisualStyleBackColor = False
+        Me.BtnApplyChanges.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnApplyChanges.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.BtnApplyChanges.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue
+        Me.BtnApplyChanges.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnApplyChanges.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.BtnApplyChanges.ForeColor = System.Drawing.Color.White
+        Me.BtnApplyChanges.Location = New System.Drawing.Point(197, 174)
+        Me.BtnApplyChanges.Name = "BtnApplyChanges"
+        Me.BtnApplyChanges.Size = New System.Drawing.Size(100, 25)
+        Me.BtnApplyChanges.TabIndex = 3
+        Me.BtnApplyChanges.Text = "Apply Changes"
+        Me.BtnApplyChanges.UseVisualStyleBackColor = False
         '
-        'btnDiscard
+        'BtnDiscard
         '
-        Me.btnDiscard.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnDiscard.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.btnDiscard.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDiscard.ForeColor = System.Drawing.Color.DimGray
-        Me.btnDiscard.Location = New System.Drawing.Point(91, 174)
-        Me.btnDiscard.Name = "btnDiscard"
-        Me.btnDiscard.Size = New System.Drawing.Size(100, 25)
-        Me.btnDiscard.TabIndex = 5
-        Me.btnDiscard.Text = "Go Back"
-        Me.btnDiscard.UseVisualStyleBackColor = True
+        Me.BtnDiscard.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnDiscard.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BtnDiscard.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnDiscard.ForeColor = System.Drawing.Color.DimGray
+        Me.BtnDiscard.Location = New System.Drawing.Point(91, 174)
+        Me.BtnDiscard.Name = "BtnDiscard"
+        Me.BtnDiscard.Size = New System.Drawing.Size(100, 25)
+        Me.BtnDiscard.TabIndex = 5
+        Me.BtnDiscard.Text = "Go Back"
+        Me.BtnDiscard.UseVisualStyleBackColor = True
         '
-        'GroupBox1
+        'GroupMain
         '
-        Me.GroupBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.GroupMain.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox1.Controls.Add(Me.btnSelectFont)
-        Me.GroupBox1.Controls.Add(Me.chkStrikethrough)
-        Me.GroupBox1.Controls.Add(Me.chkItalic)
-        Me.GroupBox1.Controls.Add(Me.chkBold)
-        Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.GroupBox1.ForeColor = System.Drawing.Color.DimGray
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 47)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(285, 100)
-        Me.GroupBox1.TabIndex = 6
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Look and Feel"
+        Me.GroupMain.Controls.Add(Me.BtnSelectFont)
+        Me.GroupMain.Controls.Add(Me.ChkStrikethrough)
+        Me.GroupMain.Controls.Add(Me.ChkItalic)
+        Me.GroupMain.Controls.Add(Me.ChkBold)
+        Me.GroupMain.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.GroupMain.ForeColor = System.Drawing.Color.DimGray
+        Me.GroupMain.Location = New System.Drawing.Point(12, 47)
+        Me.GroupMain.Name = "GroupMain"
+        Me.GroupMain.Size = New System.Drawing.Size(285, 100)
+        Me.GroupMain.TabIndex = 6
+        Me.GroupMain.TabStop = False
+        Me.GroupMain.Text = "Look and Feel"
         '
-        'btnSelectFont
+        'BtnSelectFont
         '
-        Me.btnSelectFont.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnSelectFont.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.btnSelectFont.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSelectFont.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.btnSelectFont.ForeColor = System.Drawing.Color.DimGray
-        Me.btnSelectFont.Location = New System.Drawing.Point(42, 50)
-        Me.btnSelectFont.Name = "btnSelectFont"
-        Me.btnSelectFont.Size = New System.Drawing.Size(200, 25)
-        Me.btnSelectFont.TabIndex = 10
-        Me.btnSelectFont.Text = "Open Font Selector"
-        Me.btnSelectFont.UseVisualStyleBackColor = True
+        Me.BtnSelectFont.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.BtnSelectFont.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BtnSelectFont.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnSelectFont.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.BtnSelectFont.ForeColor = System.Drawing.Color.DimGray
+        Me.BtnSelectFont.Location = New System.Drawing.Point(42, 50)
+        Me.BtnSelectFont.Name = "BtnSelectFont"
+        Me.BtnSelectFont.Size = New System.Drawing.Size(200, 25)
+        Me.BtnSelectFont.TabIndex = 10
+        Me.BtnSelectFont.Text = "Open Font Selector"
+        Me.BtnSelectFont.UseVisualStyleBackColor = True
         '
-        'chkStrikethrough
+        'ChkStrikethrough
         '
-        Me.chkStrikethrough.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.chkStrikethrough.AutoSize = True
-        Me.chkStrikethrough.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.chkStrikethrough.Location = New System.Drawing.Point(150, 25)
-        Me.chkStrikethrough.Name = "chkStrikethrough"
-        Me.chkStrikethrough.Size = New System.Drawing.Size(98, 19)
-        Me.chkStrikethrough.TabIndex = 9
-        Me.chkStrikethrough.Text = "Strikethrough"
-        Me.chkStrikethrough.UseVisualStyleBackColor = True
+        Me.ChkStrikethrough.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.ChkStrikethrough.AutoSize = True
+        Me.ChkStrikethrough.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.ChkStrikethrough.Location = New System.Drawing.Point(150, 25)
+        Me.ChkStrikethrough.Name = "ChkStrikethrough"
+        Me.ChkStrikethrough.Size = New System.Drawing.Size(98, 19)
+        Me.ChkStrikethrough.TabIndex = 9
+        Me.ChkStrikethrough.Text = "Strikethrough"
+        Me.ChkStrikethrough.UseVisualStyleBackColor = True
         '
-        'chkItalic
+        'ChkItalic
         '
-        Me.chkItalic.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.chkItalic.AutoSize = True
-        Me.chkItalic.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.chkItalic.Location = New System.Drawing.Point(93, 25)
-        Me.chkItalic.Name = "chkItalic"
-        Me.chkItalic.Size = New System.Drawing.Size(51, 19)
-        Me.chkItalic.TabIndex = 8
-        Me.chkItalic.Text = "Italic"
-        Me.chkItalic.UseVisualStyleBackColor = True
+        Me.ChkItalic.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.ChkItalic.AutoSize = True
+        Me.ChkItalic.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.ChkItalic.Location = New System.Drawing.Point(93, 25)
+        Me.ChkItalic.Name = "ChkItalic"
+        Me.ChkItalic.Size = New System.Drawing.Size(51, 19)
+        Me.ChkItalic.TabIndex = 8
+        Me.ChkItalic.Text = "Italic"
+        Me.ChkItalic.UseVisualStyleBackColor = True
         '
-        'chkBold
+        'ChkBold
         '
-        Me.chkBold.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.chkBold.AutoSize = True
-        Me.chkBold.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.chkBold.Location = New System.Drawing.Point(37, 25)
-        Me.chkBold.Name = "chkBold"
-        Me.chkBold.Size = New System.Drawing.Size(50, 19)
-        Me.chkBold.TabIndex = 7
-        Me.chkBold.Text = "Bold"
-        Me.chkBold.UseVisualStyleBackColor = True
+        Me.ChkBold.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.ChkBold.AutoSize = True
+        Me.ChkBold.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.ChkBold.Location = New System.Drawing.Point(37, 25)
+        Me.ChkBold.Name = "ChkBold"
+        Me.ChkBold.Size = New System.Drawing.Size(50, 19)
+        Me.ChkBold.TabIndex = 7
+        Me.ChkBold.Text = "Bold"
+        Me.ChkBold.UseVisualStyleBackColor = True
         '
-        'labelHead
+        'LabelHead
         '
-        Me.labelHead.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.LabelHead.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.labelHead.Location = New System.Drawing.Point(12, 9)
-        Me.labelHead.Name = "labelHead"
-        Me.labelHead.Size = New System.Drawing.Size(239, 35)
-        Me.labelHead.TabIndex = 0
-        Me.labelHead.Text = "Customize your notes in your own way."
+        Me.LabelHead.Location = New System.Drawing.Point(12, 9)
+        Me.LabelHead.Name = "LabelHead"
+        Me.LabelHead.Size = New System.Drawing.Size(239, 35)
+        Me.LabelHead.TabIndex = 0
+        Me.LabelHead.Text = "Customize your notes in your own way."
         '
         'Preferences
         '
@@ -145,10 +145,10 @@ Partial Class Preferences
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.ClientSize = New System.Drawing.Size(309, 211)
         Me.ControlBox = False
-        Me.Controls.Add(Me.labelHead)
-        Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.btnDiscard)
-        Me.Controls.Add(Me.btnApplyChanges)
+        Me.Controls.Add(Me.LabelHead)
+        Me.Controls.Add(Me.GroupMain)
+        Me.Controls.Add(Me.BtnDiscard)
+        Me.Controls.Add(Me.BtnApplyChanges)
         Me.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.ForeColor = System.Drawing.Color.DimGray
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
@@ -161,18 +161,18 @@ Partial Class Preferences
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Preferences"
         Me.TopMost = True
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
+        Me.GroupMain.ResumeLayout(False)
+        Me.GroupMain.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents btnApplyChanges As Button
-    Friend WithEvents btnDiscard As Button
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents labelHead As Label
-    Friend WithEvents chkStrikethrough As CheckBox
-    Friend WithEvents chkItalic As CheckBox
-    Friend WithEvents chkBold As CheckBox
-    Friend WithEvents btnSelectFont As Button
+    Friend WithEvents BtnApplyChanges As Button
+    Friend WithEvents BtnDiscard As Button
+    Friend WithEvents GroupMain As GroupBox
+    Friend WithEvents LabelHead As Label
+    Friend WithEvents ChkStrikethrough As CheckBox
+    Friend WithEvents ChkItalic As CheckBox
+    Friend WithEvents ChkBold As CheckBox
+    Friend WithEvents BtnSelectFont As Button
 End Class

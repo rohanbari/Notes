@@ -7,12 +7,12 @@ Public Class AboutNotes
 
     End Sub
 
-    Private Sub linkX_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles linkX.LinkClicked
+    Private Sub LinkX_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkX.LinkClicked
         Dispose()
         Close()
     End Sub
 
-    Private Sub labelPowered_Click(sender As Object, e As EventArgs) Handles labelPowered.Click
+    Private Sub LabelPowered_Click(sender As Object, e As EventArgs) Handles LabelPowered.Click
         Const link As String = "http://technosoftlabs.com/"
         Process.Start(link)
     End Sub
