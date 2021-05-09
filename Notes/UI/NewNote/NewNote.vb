@@ -1,4 +1,7 @@
-﻿Public Class NewNote
+﻿Option Strict On
+Option Explicit On
+
+Public Class NewNote
 
     Private Sub NewNote_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 

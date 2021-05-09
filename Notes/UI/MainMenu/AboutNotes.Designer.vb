@@ -30,7 +30,15 @@ Partial Class AboutNotes
         Me.labelAbout = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.linkX = New System.Windows.Forms.LinkLabel()
+        Me.tableMain = New System.Windows.Forms.TableLayoutPanel()
+        Me.labelCopyright = New System.Windows.Forms.Label()
+        Me.labelAuthor = New System.Windows.Forms.Label()
+        Me.labelCaptionCopyright = New System.Windows.Forms.Label()
+        Me.labelCaptionAuthor = New System.Windows.Forms.Label()
+        Me.labelCaptionVersion = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.picLogo, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tableMain.SuspendLayout()
         Me.SuspendLayout()
         '
         'picLogo
@@ -84,9 +92,9 @@ Partial Class AboutNotes
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.labelAbout.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.labelAbout.ForeColor = System.Drawing.Color.DimGray
-        Me.labelAbout.Location = New System.Drawing.Point(12, 140)
+        Me.labelAbout.Location = New System.Drawing.Point(12, 111)
         Me.labelAbout.Name = "labelAbout"
-        Me.labelAbout.Size = New System.Drawing.Size(476, 115)
+        Me.labelAbout.Size = New System.Drawing.Size(476, 125)
         Me.labelAbout.TabIndex = 8
         Me.labelAbout.Text = resources.GetString("labelAbout.Text")
         Me.labelAbout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -97,7 +105,7 @@ Partial Class AboutNotes
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.Label1.ForeColor = System.Drawing.Color.DimGray
-        Me.Label1.Location = New System.Drawing.Point(12, 301)
+        Me.Label1.Location = New System.Drawing.Point(12, 326)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(476, 40)
         Me.Label1.TabIndex = 9
@@ -117,13 +125,112 @@ Partial Class AboutNotes
         Me.linkX.TabStop = True
         Me.linkX.Text = "×"
         '
+        'tableMain
+        '
+        Me.tableMain.ColumnCount = 2
+        Me.tableMain.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
+        Me.tableMain.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.0!))
+        Me.tableMain.Controls.Add(Me.labelCaptionVersion, 0, 2)
+        Me.tableMain.Controls.Add(Me.labelCopyright, 1, 1)
+        Me.tableMain.Controls.Add(Me.labelAuthor, 1, 0)
+        Me.tableMain.Controls.Add(Me.labelCaptionCopyright, 0, 1)
+        Me.tableMain.Controls.Add(Me.labelCaptionAuthor, 0, 0)
+        Me.tableMain.Controls.Add(Me.Label2, 1, 2)
+        Me.tableMain.Location = New System.Drawing.Point(12, 239)
+        Me.tableMain.Name = "tableMain"
+        Me.tableMain.RowCount = 3
+        Me.tableMain.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.tableMain.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.tableMain.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.tableMain.Size = New System.Drawing.Size(476, 84)
+        Me.tableMain.TabIndex = 11
+        '
+        'labelCopyright
+        '
+        Me.labelCopyright.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.labelCopyright.AutoSize = True
+        Me.labelCopyright.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.labelCopyright.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.labelCopyright.ForeColor = System.Drawing.Color.CornflowerBlue
+        Me.labelCopyright.Location = New System.Drawing.Point(145, 33)
+        Me.labelCopyright.Name = "labelCopyright"
+        Me.labelCopyright.Size = New System.Drawing.Size(188, 15)
+        Me.labelCopyright.TabIndex = 3
+        Me.labelCopyright.Text = "GNU General Public License v3.0"
+        Me.labelCopyright.UseMnemonic = False
+        '
+        'labelAuthor
+        '
+        Me.labelAuthor.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.labelAuthor.AutoSize = True
+        Me.labelAuthor.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.labelAuthor.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.labelAuthor.ForeColor = System.Drawing.Color.CornflowerBlue
+        Me.labelAuthor.Location = New System.Drawing.Point(145, 6)
+        Me.labelAuthor.Name = "labelAuthor"
+        Me.labelAuthor.Size = New System.Drawing.Size(67, 15)
+        Me.labelAuthor.TabIndex = 2
+        Me.labelAuthor.Text = "Rohan Bari"
+        Me.labelAuthor.UseMnemonic = False
+        '
+        'labelCaptionCopyright
+        '
+        Me.labelCaptionCopyright.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.labelCaptionCopyright.AutoSize = True
+        Me.labelCaptionCopyright.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.labelCaptionCopyright.Location = New System.Drawing.Point(3, 33)
+        Me.labelCaptionCopyright.Name = "labelCaptionCopyright"
+        Me.labelCaptionCopyright.Size = New System.Drawing.Size(61, 15)
+        Me.labelCaptionCopyright.TabIndex = 1
+        Me.labelCaptionCopyright.Text = "Copyright"
+        Me.labelCaptionCopyright.UseMnemonic = False
+        '
+        'labelCaptionAuthor
+        '
+        Me.labelCaptionAuthor.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.labelCaptionAuthor.AutoSize = True
+        Me.labelCaptionAuthor.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.labelCaptionAuthor.Location = New System.Drawing.Point(3, 6)
+        Me.labelCaptionAuthor.Name = "labelCaptionAuthor"
+        Me.labelCaptionAuthor.Size = New System.Drawing.Size(121, 15)
+        Me.labelCaptionAuthor.TabIndex = 0
+        Me.labelCaptionAuthor.Text = "Author & Developer"
+        Me.labelCaptionAuthor.UseMnemonic = False
+        '
+        'labelCaptionVersion
+        '
+        Me.labelCaptionVersion.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.labelCaptionVersion.AutoSize = True
+        Me.labelCaptionVersion.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.labelCaptionVersion.Location = New System.Drawing.Point(3, 61)
+        Me.labelCaptionVersion.Name = "labelCaptionVersion"
+        Me.labelCaptionVersion.Size = New System.Drawing.Size(119, 15)
+        Me.labelCaptionVersion.TabIndex = 4
+        Me.labelCaptionVersion.Text = "Current App Version"
+        Me.labelCaptionVersion.UseMnemonic = False
+        '
+        'Label2
+        '
+        Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label2.AutoSize = True
+        Me.Label2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label2.ForeColor = System.Drawing.Color.CornflowerBlue
+        Me.Label2.Location = New System.Drawing.Point(145, 61)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(48, 15)
+        Me.Label2.TabIndex = 5
+        Me.Label2.Text = "Version"
+        Me.Label2.UseMnemonic = False
+        '
         'AboutNotes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.Window
-        Me.ClientSize = New System.Drawing.Size(500, 350)
+        Me.BackColor = System.Drawing.SystemColors.Control
+        Me.ClientSize = New System.Drawing.Size(500, 375)
         Me.ControlBox = False
+        Me.Controls.Add(Me.tableMain)
         Me.Controls.Add(Me.linkX)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.labelAbout)
@@ -140,6 +247,8 @@ Partial Class AboutNotes
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "About Notes"
         CType(Me.picLogo, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tableMain.ResumeLayout(False)
+        Me.tableMain.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -152,4 +261,11 @@ Partial Class AboutNotes
     Friend WithEvents labelAbout As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents linkX As LinkLabel
+    Friend WithEvents tableMain As TableLayoutPanel
+    Friend WithEvents labelCaptionCopyright As Label
+    Friend WithEvents labelCaptionAuthor As Label
+    Friend WithEvents labelCopyright As Label
+    Friend WithEvents labelAuthor As Label
+    Friend WithEvents labelCaptionVersion As Label
+    Friend WithEvents Label2 As Label
 End Class

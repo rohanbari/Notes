@@ -82,6 +82,8 @@ Partial Class NewNote
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBody.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtBody.Enabled = False
+        Me.txtBody.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.txtBody.ForeColor = System.Drawing.Color.DimGray
         Me.txtBody.Location = New System.Drawing.Point(12, 61)
         Me.txtBody.Multiline = True
         Me.txtBody.Name = "txtBody"

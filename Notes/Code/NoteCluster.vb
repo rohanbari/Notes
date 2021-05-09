@@ -1,4 +1,7 @@
-﻿''' <summary>
+﻿Option Strict On
+Option Explicit On
+
+''' <summary>
 ''' This class contains the definitions of required functions and sub-procedures for Notes.
 ''' </summary>
 Public Class NoteCluster
@@ -9,7 +12,9 @@ Public Class NoteCluster
     ''' <returns>Integer</returns>
     Public Shared Function WordCount(str As String) As Integer
         If String.IsNullOrEmpty(str) Then
-            Debug.WriteLine("String " + NameOf(str) + " has been detected null or empty // Skipping count")
+            Debug.WriteLine(
+                "String " + NameOf(str) +
+                " has been detected null or empty // Setting count to zero")
             Return 0
         End If
 
